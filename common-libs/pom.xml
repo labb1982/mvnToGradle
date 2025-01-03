@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.rssoftware</groupId>
+    <artifactId>rsie-bank</artifactId>
+    <version>${revision}</version>
+  </parent>
+  <artifactId>common-libs</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>Cassandra_accessor</module>
+  	<module>Kafka_accessor</module>
+  	<module>MDMRefresher</module>
+  	<module>RESTAPI</module>
+  	<module>Email_Sender</module>
+  	<module>FTPHandler</module>
+  	<module>redis-handler</module>
+  </modules>
+</project>
