@@ -4,8 +4,9 @@
 
 //plugins {  id("buildlogic.java-conventions")}
 
+apply plugin: 'java-library'
 dependencies {
    
 }
 
-description = "Email_Sender"
+description = "common-services"

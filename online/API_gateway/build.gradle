@@ -5,8 +5,18 @@
 //plugins {    id("buildlogic.java-conventions")}
 
 dependencies {
-   implementation 'org.springframework.boot:spring-boot-starter-web'
-   implementation project(':common-libs:RESTAPI')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation project(':common-libs:RESTAPI')
 }
 
 description = "API_gateway"
+apply plugin: 'application'
+apply plugin: 'org.springframework.boot'
+
+bootJar {
+    // archiveFileName = "${archiveBaseName.get()}.${archiveExtension.get()}"
+//    archiveName = "$baseName.$extension"
+}
+tasks.named("bootJar") {
+    archiveClassifier = 'boot' // + "${version}"
+}
